@@ -1,0 +1,303 @@
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3b3b3b;
+}
+
+header {
+    background-color: #3b3b3b; /* Clean dark background */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    box-shadow: 0 4px 8px rgba(46, 45, 45, 0.6);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.site-title{
+    padding-left:50px ;
+    color: #fff;
+}
+/* Navigation bar */
+nav {
+    display: flex;
+    gap: 20px; 
+    padding: 40px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    margin-left: 50px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 8px;
+}
+
+/* Hover effect */
+nav a:hover {
+    background-color: #e50914;
+    color: #fff;
+}
+
+#logo {
+    height: 100px;
+    width: auto;
+    margin: 10px;
+}
+
+
+main {
+    max-width: 800px;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Order Summary */
+#booking-summary table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+    margin-left: 0px;
+}
+
+#booking-summary th, #booking-summary td {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    text-align: left;
+}
+
+#booking-summary th {
+    background-color: #323232;
+    color: rgb(15, 15, 15);
+    font-weight: bold;
+    color: #fffF;
+    font-weight: bold;
+}
+
+#booking-summary tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+#booking-summary tbody tr:nth-child(even) {
+    background-color: #eef2f7;
+}
+
+#booking-summary tfoot td {
+    font-weight: bold;
+    text-align: right;
+}
+
+#grand-total {
+    color: rgb(25, 26, 25);
+    font-size: 1.3rem;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    font-weight: bold;
+    color: rgb(10, 11, 10);
+}
+
+input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+}
+
+button {
+    padding: 0.75rem;
+    background-color: rgb(15, 15, 15);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #3c3d3b;
+}
+
+#thank-you-message {
+    text-align: center;
+    margin-top: 2rem;
+}
+.footer div:nth-child(2) a {
+    margin-right: 45px;
+    padding-left: 0px;
+}
+ footer {
+        display: flex; /* Aligns the children (logo, social media, contacts) horizontally */
+        justify-content: space-between; 
+        align-items: center; /* Aligns items vertically in the center */
+        padding: 20px;
+        background-color: #3f3e3e;; 
+        border-top: 1px solid #ccc; /* Optional border to define the footer */
+    }
+.foot-logo {
+        max-width: 100px; 
+    }
+.icon{
+        margin-left: 200px;
+    }
+.contactus-section{
+        margin-right: 30px;
+    }
+#thank-you-message{
+        display: none;
+        text-align:center; 
+        padding: 20px;
+    }
+
+/*media queries for mobile*/
+@media screen and (max-width: 768px) {
+        /* Header section */
+        header {
+            flex-direction: column;
+            align-items: center;
+            padding: 15px;
+            text-align: center;
+        }
+    
+        #logo {
+            max-width: 120px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+    
+        .site-title {
+            font-size: 20px;
+            padding-right: 50px;
+        }
+    
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px 0;
+            gap: 10px;
+        }
+    
+        nav a {
+            font-size: 16px;
+            padding-right: 50px;
+        }
+        /* Booking Summary */
+        #booking-summary {
+            padding: 15px;
+            overflow-x: auto;
+        }
+    
+        #booking-summary table {
+            width: 100%;
+            font-size: 14px;
+            border-collapse: collapse;
+        }
+    
+        #booking-summary th, #booking-summary td {
+            padding: 8px;
+            text-align: left;
+        }
+    
+        /* Personal Details */
+        #personal-details {
+            padding: 15px;
+        }
+    
+        #personal-details h2 {
+            font-size: 18px;
+        }
+    
+        form label {
+            font-size: 14px;
+        }
+    
+        form input,
+        form select {
+            width: 100%;
+            padding: 8px;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+    
+        #pay-button {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+        }
+    
+        /* Thank You Message */
+        #thank-you-message {
+            padding: 20px;
+            text-align: center;
+        }
+    
+        #thank-you-message h2 {
+            font-size: 20px;
+        }
+    
+        #thank-you-message p {
+            font-size: 14px;
+        }
+    
+        /* Footer */
+        footer {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px 15px;
+        }
+    
+        .foot-logo {
+            max-width: 80px;
+            margin-bottom: 15px;
+        }
+    
+        .icon {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+            margin-left: 0;
+        }
+    
+        .icon img {
+            width: 32px;
+            height: 32px;
+        }
+    
+        .contactus-section {
+            margin: 0;
+        }
+    
+        .contactus-section ul {
+            padding: 0;
+        }
+    
+        .contactus-section li {
+            font-size: 14px;
+        }
+    }
+    

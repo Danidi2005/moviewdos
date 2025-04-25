@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platinum Cinemas</title>
+    <link href="css/pay.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+</head>
+<body>
+    <!--header section-->
+    <header class="main-header">
+        <!--logo-->
+        <img src="images/logo.png" alt="logo" id="logo">
+        <h1 class="site-title">PLATINUM CINEMAS</h1>
+        <!--navbar-->
+        <nav>
+           <a href="index.html">Back</a>
+           
+          
+        </nav>
+    </header>
+
+    <main>
+        <!-- booking Summary -->
+        <section id="booking-summary">
+            <h2>Booking Summary</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Movie Name</th>
+                        <th>No Of Seats</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Grand Total:</td>
+                        <td id="grand-total"></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!-- Personal Details -->
+        <section id="personal-details">
+            <h2>Personal Details</h2>
+            <form id="checkout-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                 <!-- Seat Preferences -->
+            <h2>Seat Preferences</h2>
+               <label for="section">Preferred Section:</label>
+               <select id="section" name="section" required>
+                 <option value="">--Select--</option>
+                 <option value="front">Front</option>
+                 <option value="middle">Middle</option>
+                 <option value="back">Back</option>
+               </select>
+               <label for="seat-type">Seat Type:</label>
+               <select id="seat-type" name="seat-type" required>
+                 <option value="">--Select--</option>
+                 <option value="normal">Normal</option>
+                 <option value="recliner">Recliner</option>
+                 <option value="vip">VIP</option>
+                 <option value="couple">Couple Seat</option>
+               </select>
+
+               <label for="aisle-pref">Seat location:</label>
+               <select id="aisle-pref" name="aisle-pref">
+                 <option value="">--Select--</option>
+                 <option value="aisle">Aisle</option>
+                 <option value="middle">Middle</option>
+                 <option value="none">No Preference</option>
+               </select>
+                <!-- Payment Information -->
+                <h2>Payment Information</h2>
+                <label for="card-name">Cardholder Name:</label>
+                <input type="text" id="card-name" name="card-name" required>
+
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" name="card-number" required>
+
+                <label for="exp-date">Expiration Date:</label>
+                <input type="month" id="exp-date" name="exp-date" required>
+
+
+                <!-- Pay Button -->
+                <button type="button" id="pay-button">Pay</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Thank You Message -->
+    <div id="thank-you-message">
+        <h2>Thank You for Your Purchase!</h2>
+        <p>Your movie ticket has been successfully booked.</p>
+        <p><strong>Movie Time:</strong> <span id="movie-time">--:--</span></p>
+        <p><strong>Seat Details:</strong> <span id="seat-details">---</span></p>
+        <p><strong>Booking Reference:</strong> <code id="booking-ref">---</code></p>
+        <p>We look forward to seeing you at the cinema. Enjoy the show!</p>
+    </div>
+    
+     <!-- Footer Section -->
+     <footer>
+        <div>
+            <img src="images/logo.png" alt="footer-logo" class="foot-logo">
+        </div>
+         <div class="icon">
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="images/icons8-instagram-48.png" alt="instargram" class="inst">
+            </a>
+            <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank">
+                <img src="images/icons8-facebook-48.png" alt="facebook" class="face">
+            </a>
+            <a href="https://www.linkedin.com/learning-login/" target="_blank">
+                <img src="images/icons8-linked-in-48.png" alt="linkedin" class="linkd">
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+                <img src="images/icons8-youtube-48.png" alt="Youtube" class="yout">
+            </a>
+         </div>
+         
+        
+         <div class="contactus-section">
+            
+            <ul type="none">
+                <li> <h3>CONTACT US</h3></li>
+                <li>+94 11 455 6759</li>
+                <li>platinumcinemas@gmail.com.</li>
+                <li>Platinum Cinemas,<br>Galle Road,<br> Colombo 03.</li>
+                
+            </ul>
+         </div>
+    </footer>
+    <script src="js/pay.js" defer></script>
+    
+   </body>
+</html>
